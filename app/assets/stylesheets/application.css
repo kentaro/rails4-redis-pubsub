@@ -1,0 +1,36 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import url('http://fonts.googleapis.com/css?family=Inder');
+
+body {
+  font-family: 'Inder', sans-serif;
+  color: #333;
+}
+
+#result {
+  font-size: 200%;
+  padding: 2em;
+  background-color: #f0f0f0;
+}
+
+.notice {
+  color: #468847;
+  display: block;
+}
+
+.error {
+  color: #808080;
+  display: block;
+}
