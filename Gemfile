@@ -15,7 +15,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'turbolinks'
+gem 'turbolinks', github: 'kentaro/turbolinks', branch: 'move_filter_to_before_from_after'
 
 # Added just below gems for this demo
 gem 'redis'

@@ -1,10 +1,6 @@
 class StreamerController < ApplicationController
   include ActionController::Live
 
-  # This filter which is added by turbolinks causes `header already
-  # sent` errror...
-  skip_after_filter :set_xhr_current_location
-
   def dequeue
     job_id = params[:job_id]
     response.headers['Content-Type'] = 'text/event-stream'
